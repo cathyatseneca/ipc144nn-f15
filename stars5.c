@@ -1,21 +1,21 @@
 #include <stdio.h>
 /* write a program that will ask the user
 for a number.  The program will then print
-a square with that many * symbols on one line
+a hollow empty with that many * symbols on one line
 and that many lines.
 
 For example if number was 3, program prints:
 
 ***
-***
+* *
 ***
 
 if number was 5, program prints:
 
 *****
-*****
-*****
-*****
+*   *
+*   *
+*   *
 *****
 
 */
