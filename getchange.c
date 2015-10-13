@@ -21,7 +21,19 @@ int roundChange(int changeAmt){
 	//this is a stub function.  It doesn't really work. 
 	//however it gives an expected result so that other code
 	//can be written and tested.
-	return 95;
+	int lastDigit = changeAmt % 10;
+	if(lastDigit >=3 && lastDigit <=7){
+		changeAmt = changeAmt / 10 * 10 + 5;
+	}
+	else{
+		if(lastDigit ==8 || lastDigit ==9){
+			changeAmt=changeAmt/10*10+10;
+		}
+		else{
+			changeAmt = changeAmt/10*10;
+		}
+	}
+	return changeAmt;
 }
 
 void getChange(int changeAmt,int* numLoonies,
@@ -35,14 +47,18 @@ void getChange(int changeAmt,int* numLoonies,
 	//step 1: round the pennies
 	changeAmt = roundChange(changeAmt);
 	//calculate number of loonies
-	nl = ???
+	nl = changeAmt/100;
+	changeAmt = changeAmt - nl*100;
 	//calculate number of quarters
-	nq=???
+	nq= changeAmt/25;
+	changeAmt = changeAmt - nq*25;
 	//calculate number of dimes
-	nd = ???
+	nd = changeAmt/10;
+	changeAmt = changeAmt - nd*10;
 	//calculate number of nickels
-	nn = ???
+	nn = changeAmt/5;
 
+	*numQuarters = nq;
 }
 
 
