@@ -21,6 +21,7 @@ if number was 5, program prints:
 */
 
 void printLineOfStars(int numStars);
+void printHollowLine(int width);
 int main(void){
 	int numToPrint;
 	int i;
@@ -33,9 +34,6 @@ int main(void){
 	for( i=0;i<numToPrint;i++){
 		printLineOfStars(numToPrint);
 	}
-
-
-
 	return 0;
 }
 
@@ -47,5 +45,11 @@ void printLineOfStars(int numStars){
 	}
 	printf("\n");
 }
+/*this function prints a "hollow" line.
+a hollow line begins and ends with the * character.
+the middle is filled with spaces (width -2 of them)
+*/
+void printHollowLine(int width){
 
+}
 
