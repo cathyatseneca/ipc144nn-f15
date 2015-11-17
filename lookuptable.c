@@ -39,3 +39,4 @@ int linearSearch(const char* key, char array[][10],int sz){
 	}
 	return rc;
 }
+
