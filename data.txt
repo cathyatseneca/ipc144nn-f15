@@ -1,0 +1,3 @@
+apple: a red fruit (n)
+banana: a yellow fruit (n)
+run: a cardiovascular activity (v)
